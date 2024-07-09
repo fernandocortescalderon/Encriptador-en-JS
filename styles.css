@@ -5,15 +5,14 @@
         background: #F3F5FC;
     }
 
-    #img {
+    #logo {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
         gap: 40px;
         position: absolute;
-        width: 120px;
-        height: 48px;
+        width: 50px;
         left: 40px;
         top: 40px;
     }
@@ -113,3 +112,79 @@
         order: 1;
         flex-grow: 0;
     }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+        .parrafo {
+            width: 90%;
+            left: 5%;
+            font-size: 24px;
+            top: 140px;
+        }
+    
+        .encriptacion {
+            width: 80%;
+            height: auto;
+            left: 10%;
+            top: 80px;
+        }
+    
+        .encriptacion img {
+            display: none;
+        }
+    
+        .encriptacion div {
+            width: 80%;
+            left: 10%;
+            top: 550px;
+        }
+    
+        .botones {
+            width: 90%;
+            left: 5%;
+            top: 780px;
+            flex-direction: column;
+            gap: 16px;
+        }
+    
+        .botones #encriptar, .botones #desencriptar {
+            width: 100%;
+        }
+    }
+
+@media (max-width: 600px) {
+    .parrafo {
+        width: 90%;
+        left: 5%;
+        font-size: 20px;
+        top: 100px;
+    }
+
+    .encriptacion {
+        width: 90%;
+        height: auto;
+        left: 5%;
+        top: 140px;
+    }
+
+    .encriptacion img {
+        display: none;
+    }
+
+    .encriptacion div {
+        width: 90%;
+        left: 5%;
+        top: 300px;
+    }
+
+    .botones {
+        width: 90%;
+        left: 5%;
+        top: 450px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .botones #encriptar, .botones #desencriptar {
+        width: 100%;
+    }
+}
