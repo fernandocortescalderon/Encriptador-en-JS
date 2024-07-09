@@ -10,19 +10,19 @@
     <div class="content">
         
         <img src="images/logo.png" alt="" id="logo">
-        <textarea name="parrafo" class="parrafo" placeholder="Escribe aquí..." oninput="autoResize(this)"></textarea>        
+        <textarea name="parrafo" class="parrafo" id="entrada" placeholder="Ingresa el texto aquí" oninput="autoResize(this)"></textarea>        
         
         <div class="encriptacion">
             <img src="images/imagen.png" alt="Inserta un texto">
             <div>
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p class="encriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <h2 id="accion"></h2>
+                <p class="encriptado" id="resultado"></p>
             </div>
         </div>
 
         <div class="botones">
-            <button id="encriptar">Encriptar</button>
-            <button id="desencriptar">Desencriptar</button>
+            <button onclick="encriptar()" id="encriptar">Encriptar</button>
+            <button onclick="desencriptar()" id="desencriptar">Desencriptar</button>
         </div>
 
     </div>
